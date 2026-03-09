@@ -30,8 +30,6 @@ fn main() {
 
         println!("You guessed: {}", guess);
 
-        // println!("You guessed: {guess}"); // or using the new syntax
-
         let rand_num = rand::thread_rng().gen_range(1..=10);
 
         match guess.cmp(&rand_num) {
@@ -44,8 +42,4 @@ fn main() {
         }
         println!("The secret number is: {}", rand_num);
     }
-
-    // let x = 5;
-    // let y = 10;
-    // println!("x = {x} and y + 2 = {}", y + 2);
 }
